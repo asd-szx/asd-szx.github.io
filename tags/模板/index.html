@@ -102,7 +102,7 @@
 
   <meta property="og:type" content="website">
 <meta property="og:title" content="阿斯顿小弟弟的博客 ~ OI&amp;Algorithm">
-<meta property="og:url" content="http://asd-szx.github.io/index.html">
+<meta property="og:url" content="http://asd-szx.github.io/tags/模板/index.html">
 <meta property="og:site_name" content="阿斯顿小弟弟的博客 ~ OI&amp;Algorithm">
 <meta property="og:locale" content="zh-CN">
 <meta name="twitter:card" content="summary">
@@ -113,7 +113,7 @@
 
 
 
-  <link rel="canonical" href="http://asd-szx.github.io/">
+  <link rel="canonical" href="http://asd-szx.github.io/tags/模板/">
 
 
 
@@ -123,7 +123,7 @@
   };
 </script>
 
-  <title>阿斯顿小弟弟的博客 ~ OI&Algorithm</title>
+  <title>标签: 模板 | 阿斯顿小弟弟的博客 ~ OI&Algorithm</title>
   
 
 
@@ -171,8 +171,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -214,7 +213,7 @@
         
         
           
-          <li class="menu-item menu-item-home menu-item-active">
+          <li class="menu-item menu-item-home">
 
     
     
@@ -248,7 +247,7 @@
         
         
           
-          <li class="menu-item menu-item-tags">
+          <li class="menu-item menu-item-tags menu-item-active">
 
     
     
@@ -336,374 +335,76 @@
           
             
 
+    
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+    
+
+  
+
+
           
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
-    
+
+  
+  
+  
+  <div class="post-block tag">
+
+    <div id="posts" class="posts-collapse">
+      <div class="collection-title">
+        <h1>模板<small>标签</small>
+        </h1>
+      </div>
+
       
-
-  
-
-  
-  
-  
-
-  
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://asd-szx.github.io/2019/03/24/模板-KMP算法/">
+    <header class="post-header">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="阿斯顿小弟弟">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/asd-szx-avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="阿斯顿小弟弟的博客 ~ OI&Algorithm">
-    </span>
-
-    
-      <header class="post-header">
-
+      <h2 class="post-title">
         
+          <a class="post-title-link" href="/2019/03/24/模板-KMP算法/" itemprop="url">
+            
+              <span itemprop="name">[模板]KMP算法</span>
+            
+          </a>
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/03/24/模板-KMP算法/" class="post-title-link" itemprop="url">[模板]KMP算法</a>
-              
-            
-          </h1>
-        
+      </h2>
 
-        <div class="post-meta">
-          <span class="post-time">
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated" datetime="2019-03-24T09:09:02+08:00" content="2019-03-24">
+          03-24
+        </time>
+      </div>
 
-            
-            
-            
+    </header>
+  </article>
 
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
 
-              
-                
-              
-
-              <time title="创建时间：2019-03-24 09:09:02 / 修改时间：09:27:23" itemprop="dateCreated datePublished" datetime="2019-03-24T09:09:02+08:00">2019-03-24</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">本文字数：</span>
-                
-                <span title="本文字数"></span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长"></span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>
-              主串为A[0…n-1]，匹配串为B[0…m-1]，其中n,m为长度。码风源于这个博客。
-求next数组从-1开始计数。
-void getNext() &#123;    int i, j;    next[0] = -1;    for(i = 1; i &lt; m; i++) &#123;   
-              ...
-            </p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2019/03/24/模板-KMP算法/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
       
     </div>
 
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
   
   
   
-  </article>
-
-
-    
-      
 
   
 
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://asd-szx.github.io/2019/03/23/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="阿斯顿小弟弟">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/asd-szx-avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="阿斯顿小弟弟的博客 ~ OI&Algorithm">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/03/23/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-03-23 12:26:26" itemprop="dateCreated datePublished" datetime="2019-03-23T12:26:26+08:00">2019-03-23</time>
-            
-
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">本文字数：</span>
-                
-                <span title="本文字数"></span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长"></span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>
-              Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in 
-              ...
-            </p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2019/03/23/hello-world/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -1400,12 +1101,6 @@ void getNext() &#123;    int i, j;    next[0] = -1;    for(i = 1; i &lt; m; i++)
   
 
   
-  
-    
-      
-    
-      
-    
   
 
   
